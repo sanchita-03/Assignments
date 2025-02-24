@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\bin\Debug\net6.0\Ticket_booking_task2.exe
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\bin\Debug\net6.0\Ticket_booking_task2.deps.json
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\bin\Debug\net6.0\Ticket_booking_task2.runtimeconfig.json
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\bin\Debug\net6.0\Ticket_booking_task2.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\bin\Debug\net6.0\Ticket_booking_task2.pdb
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\refint\Ticket_booking_task2.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.pdb
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\Ticket_booking_task2.genruntimeconfig.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Ticket_booking_task2\obj\Debug\net6.0\ref\Ticket_booking_task2.dll

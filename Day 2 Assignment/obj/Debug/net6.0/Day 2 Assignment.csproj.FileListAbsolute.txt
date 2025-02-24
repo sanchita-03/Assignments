@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\bin\Debug\net6.0\Day 2 Assignment.exe
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\bin\Debug\net6.0\Day 2 Assignment.deps.json
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\bin\Debug\net6.0\Day 2 Assignment.runtimeconfig.json
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\bin\Debug\net6.0\Day 2 Assignment.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\bin\Debug\net6.0\Day 2 Assignment.pdb
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\refint\Day 2 Assignment.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.pdb
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\Day 2 Assignment.genruntimeconfig.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\Assignments\Day 2 Assignment\obj\Debug\net6.0\ref\Day 2 Assignment.dll
