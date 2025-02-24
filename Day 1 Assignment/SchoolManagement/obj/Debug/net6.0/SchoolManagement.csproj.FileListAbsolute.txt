@@ -1,0 +1,14 @@
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\bin\Debug\net6.0\SchoolManagement.exe
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\bin\Debug\net6.0\SchoolManagement.deps.json
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\bin\Debug\net6.0\SchoolManagement.runtimeconfig.json
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\bin\Debug\net6.0\SchoolManagement.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\bin\Debug\net6.0\SchoolManagement.pdb
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\refint\SchoolManagement.dll
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.pdb
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\SchoolManagement.genruntimeconfig.cache
+C:\Users\User\OneDrive\Desktop\Dotnet\SchoolManagement\obj\Debug\net6.0\ref\SchoolManagement.dll
