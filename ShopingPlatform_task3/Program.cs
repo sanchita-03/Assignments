@@ -8,8 +8,7 @@
             double[] Wallet_amount = { 12000, 15000, 30000 };
             bool IsValidUserId = false;
 
-            while (true)
-            {
+            not_Valid:
                 Console.WriteLine("Enter your User ID");
                 string User_id = Console.ReadLine();
 
@@ -23,16 +22,13 @@
                         break;
                     }
                 }
-                if (IsValidUserId)
-                {   
-                    break;
-                }
-                else
+                if (!IsValidUserId)
                 {
                     Console.WriteLine("Invalid User Id Please Try Again");
                     Console.WriteLine("***************************************");
+                    goto not_Valid;
                 }
-            }
+               
         }
     }
 }
