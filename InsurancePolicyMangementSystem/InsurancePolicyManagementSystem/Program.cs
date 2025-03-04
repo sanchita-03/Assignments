@@ -1,7 +1,6 @@
-﻿using InsurancePolicyManagementSystem.Repository;
+﻿using InsurancePolicyManagementSystem.Constants;
 using InsurancePolicyManagementSystem.Model;
-using System.Transactions;
-using InsurancePolicyManagementSystem.Constants;
+using InsurancePolicyManagementSystem.Repository;
 
 namespace InsurancePolicyManagementSystem
 {

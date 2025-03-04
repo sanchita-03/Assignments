@@ -34,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Policy.cs",
-              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Model\\Policy.cs",
-              "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Model\\Policy.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Model\\Policy.cs",
-              "RelativeToolTip": "InsurancePolicyManagementSystem\\Model\\Policy.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-04T06:42:55.144Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -60,6 +47,20 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T06:58:34.705Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Policy.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Model\\Policy.cs",
+              "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Model\\Policy.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Model\\Policy.cs",
+              "RelativeToolTip": "InsurancePolicyManagementSystem\\Model\\Policy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAACBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T06:42:55.144Z",
               "EditorCaption": ""
             },
             {
@@ -109,7 +110,7 @@
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Program.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Program.cs",
               "RelativeToolTip": "InsurancePolicyManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T05:27:02.59Z",
               "EditorCaption": ""
