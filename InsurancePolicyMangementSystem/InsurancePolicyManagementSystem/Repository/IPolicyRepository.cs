@@ -4,10 +4,11 @@ namespace InsurancePolicyManagementSystem.Repository
 {
     public interface IPolicyRepository
     {
+        int CountDictItem();
         void AddPolicy(Policy policy);
         void ViewAllPolicies();
         void SearchPolicyById(int id);
-        void UpdatePolicyDetails(Policy policy);
+        void UpdatePolicyDetails(int id);
         void DeletePolicy(int id);
         void ViewActivePolicies();
     }

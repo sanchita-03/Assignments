@@ -10,8 +10,8 @@ namespace InsurancePolicyManagementSystem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome To NeoInsurance");
-            int nextid = 1;
             IPolicyRepository policyRepository = new PolicyRepository();
+            int nextid = policyRepository.CountDictItem();
             int choice;
             while (true)
             {
@@ -27,10 +27,11 @@ namespace InsurancePolicyManagementSystem
                     case 1:
                         Console.WriteLine("Enter Policy Holder name");
                         string name=Console.ReadLine();
-                        Console.Write("Enter Policy Type (Life, Health, Vehicle, Property): ");
+                        Console.Write("Enter Policy Type (1.Life, 2.Health, 3.Vehicle, 4.Property): ");
                         PolicyType type = (PolicyType)Enum.Parse(typeof(PolicyType), Console.ReadLine(), true);
-                        Console.Write("Enter Start Date (yyyy-MM-dd): ");
-                        DateTime startDate = DateTime.Parse(Console.ReadLine());
+                        //Console.Write("Enter Start Date (yyyy-MM-dd): ");
+                        DateTime startDate = DateTime.Now.Date;
+                        Console.WriteLine(startDate);
                         Console.Write("Enter End Date (yyyy-MM-dd): ");
                         DateTime endDate = DateTime.Parse(Console.ReadLine());
                         policyRepository.AddPolicy(new Policy(nextid, name, type, startDate, endDate));
@@ -46,7 +47,6 @@ namespace InsurancePolicyManagementSystem
                         break;
                     case 3:
                         Console.WriteLine("*****************************************************************************");
-                        Console.WriteLine("Details Of searched Policy:");
                         Console.WriteLine("Enter Policy Id You Want To Search");
                         int id=Convert.ToInt32(Console.ReadLine());
                         policyRepository.SearchPolicyById(id);
@@ -56,17 +56,7 @@ namespace InsurancePolicyManagementSystem
                         Console.WriteLine("*****************************************************************************");
                         Console.WriteLine("Enter Policy Id for which you want to update Details");
                         id = Convert.ToInt32(Console.ReadLine());
-                        Console.WriteLine("Enter Details again :");
-                        Console.WriteLine("Enter Policy Holder name");
-                        name = Console.ReadLine();
-                        Console.Write("Enter Policy Type (Life, Health, Vehicle, Property): ");
-                        type = (PolicyType)Enum.Parse(typeof(PolicyType), Console.ReadLine(), true);
-                        Console.Write("Enter Start Date (yyyy-MM-dd): ");
-                        startDate = DateTime.Parse(Console.ReadLine());
-                        Console.Write("Enter End Date (yyyy-MM-dd): ");
-                        endDate = DateTime.Parse(Console.ReadLine());
-                        policyRepository.UpdatePolicyDetails(new Policy(id, name, type, startDate, endDate));
-                        Console.WriteLine("Details Updated successFuly");
+                        policyRepository.UpdatePolicyDetails(id);
                         Console.WriteLine("*****************************************************************************");
                         break;
                     case 5:
@@ -74,7 +64,7 @@ namespace InsurancePolicyManagementSystem
                         Console.WriteLine("Enter Policy Id You Want To Delete");
                         id = Convert.ToInt32(Console.ReadLine());
                         policyRepository.DeletePolicy(id);
-                        Console.WriteLine("Policy Deleted successFuly");
+                        
                         Console.WriteLine("*****************************************************************************");
                         break;
                     case 6:

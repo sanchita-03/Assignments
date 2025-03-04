@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\repository\\policyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\repository\\policyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\model\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\model\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\constants\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\constants\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\exceptions\\policynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\exceptions\\policynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\repository\\ipolicyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\repository\\ipolicyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\repository\\policyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\repository\\policyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\constants\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\constants\\policytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\exceptions\\policynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\exceptions\\policynotfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\insurancepolicymangementsystem\\insurancepolicymanagementsystem\\model\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7457909D-0DA3-4615-9C1F-EAE8EB4AE203}|InsurancePolicyManagementSystem\\InsurancePolicyManagementSystem.csproj|solutionrelative:insurancepolicymanagementsystem\\model\\policy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,31 +34,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Policy.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Model\\Policy.cs",
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Model\\Policy.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Model\\Policy.cs",
               "RelativeToolTip": "InsurancePolicyManagementSystem\\Model\\Policy.cs",
-              "ViewState": "AgIAAAsAAADgmZmZmZkrwBEAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAACANDMzMzMDwBYAAACBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T06:42:55.144Z",
-              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "PolicyType.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Constants\\PolicyType.cs",
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Constants\\PolicyType.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Constants\\PolicyType.cs",
               "RelativeToolTip": "InsurancePolicyManagementSystem\\Constants\\PolicyType.cs",
-              "ViewState": "AgIAAAAAAABAMzMzMzMLwAUAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAABAMzMzMzMLwAcAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T06:58:34.705Z",
               "EditorCaption": ""
@@ -71,27 +70,27 @@
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Repository\\IPolicyRepository.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Repository\\IPolicyRepository.cs",
               "RelativeToolTip": "InsurancePolicyManagementSystem\\Repository\\IPolicyRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T06:44:38.985Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PolicyRepository.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Repository\\PolicyRepository.cs",
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Repository\\PolicyRepository.cs",
-              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Repository\\PolicyRepository.cs",
-              "RelativeToolTip": "InsurancePolicyManagementSystem\\Repository\\PolicyRepository.cs",
-              "ViewState": "AgIAAB0AAADw/f////8vwAwAAAANAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Repository\\PolicyRepository.cs*",
+              "RelativeToolTip": "InsurancePolicyManagementSystem\\Repository\\PolicyRepository.cs*",
+              "ViewState": "AgIAAGcAAADgZGZmZgY1wIkAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T06:44:06.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "PolicyNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Exceptions\\PolicyNotFoundException.cs",
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Exceptions\\PolicyNotFoundException.cs",
@@ -104,13 +103,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Program.cs",
               "RelativeDocumentMoniker": "InsurancePolicyManagementSystem\\Program.cs",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\InsurancePolicyMangementSystem\\InsurancePolicyManagementSystem\\Program.cs",
               "RelativeToolTip": "InsurancePolicyManagementSystem\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAmZmZmZkXwCMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-04T05:27:02.59Z",
               "EditorCaption": ""
