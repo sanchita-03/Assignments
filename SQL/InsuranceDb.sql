@@ -13,8 +13,3 @@ truncate table policies
 
 
 select * from Policies
-public int PolicyId { get; set; }
-public string PolicyHolderName { get; set; }
-public PolicyType PolicyType { get; set; }
-public DateTime StartDate { get; set; }
-public DateTime EndDate { get; set; }
