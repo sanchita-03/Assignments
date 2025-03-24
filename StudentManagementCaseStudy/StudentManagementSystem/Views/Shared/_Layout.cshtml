@@ -1,0 +1,99 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@using StudentManagementSystem.Context;
+@using StudentManagementSystem.Models;
+@inject SignInManager<ApplicationUser> _signInManager;
+@inject UserManager<ApplicationUser> _userManager;
+@inject StudentDbContext _context;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - StudentManagementSystem</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/StudentManagementSystem.styles.css" asp-append-version="true" />
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Student Management System</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">About Us</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        @if (_signInManager.IsSignedIn(User))
+                        {
+                            var user = await _userManager.GetUserAsync(User);
+                            var student = _context.Students.FirstOrDefault(s => s.UserId == user.Id);
+                            var roles = await _userManager.GetRolesAsync(user);
+                            string userRole = roles.Any() ? roles.First() : "User";
+
+                            <li class="nav-item">
+                                @if (student != null)
+                                {
+                                    <a asp-controller="Student" asp-action="StudentDashboard" class="nav-link text-decoration-none">
+                                        👤 @student.Name
+                                    </a>
+                                }
+                                else
+                                {
+                                    <!-- Display only Role if user is NOT a student -->
+                                    <a asp-controller="Admin" asp-action="AdminDashboard" class="nav-link text-decoration-none">
+                                        🔑 @userRole
+                                    </a>
+
+                                }
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="LogOut">LogOut</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="Register">Register</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Account" asp-action="LogIn">Login</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-4">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <br></br>
+    <footer class="footer">
+        <div class="container">
+            &copy; @DateTime.Now.Year - Student Management System | All rights reserved | Designed by Sanchita Mandhare
+        </div>
+    </footer>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

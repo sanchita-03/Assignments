@@ -1,0 +1,36 @@
+﻿@model StudentManagementSystem.Models.Enrollment
+
+@{
+    ViewData["Title"] = "Withdraw Student";
+}
+
+<h1 class="text-danger text-center my-4">Withdraw from Course</h1>
+
+<div class="card shadow-lg mx-auto" style="max-width: 600px;">
+    <div class="card-body">
+        <h4 class="text-center text-warning mb-4">Are you sure you want to withdraw?</h4>
+        <hr />
+
+        <dl class="row">
+            <dt class="col-sm-4 fw-bold">Student Name:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Student.Name)</dd>
+
+            <dt class="col-sm-4 fw-bold">Course Name:</dt>
+            <dd class="col-sm-8">@Html.DisplayFor(model => model.Course.CourseName)</dd>
+        </dl>
+
+        <form asp-action="ConfirmWithdrawStudent" class="text-center mt-4">
+            <input type="hidden" asp-for="StudentId" />
+            <input type="hidden" asp-for="CourseId" />
+
+            <button type="submit" class="btn btn-danger px-4">
+                <i class="bi bi-x-circle"></i> Withdraw
+            </button>
+
+            <a asp-action="GetEnrollmentsByStudentId" asp-route-studentId="@Model.StudentId"
+               class="btn btn-secondary px-4 ms-2">
+                <i class="bi bi-arrow-left"></i> Back
+            </a>
+        </form>
+    </div>
+</div>

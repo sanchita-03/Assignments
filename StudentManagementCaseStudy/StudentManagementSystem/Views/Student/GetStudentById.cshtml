@@ -1,0 +1,73 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> _userManager
+
+@model StudentManagementSystem.Models.Student
+
+@{
+    ViewData["Title"] = "Student Details";
+    var user = _userManager.GetUserAsync(User).Result;
+    var isAdmin = user != null && _userManager.IsInRoleAsync(user, "Admin").Result;
+}
+
+<div class="container mt-4">
+    <h2 class="text-primary text-center mb-4">Student Details</h2>
+
+    <div class="card shadow-lg p-4">
+        <div class="card-body">
+
+            <dl class="row">
+                <dt class="col-sm-4 fw-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.FirstName)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.FirstName)
+                </dd>
+
+                <dt class="col-sm-4 fw-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.LastName)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.LastName)
+                </dd>
+
+                <dt class="col-sm-4 fw-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.Email)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.Email)
+                </dd>
+
+                <dt class="col-sm-4 fw-bold text-secondary">
+                    @Html.DisplayNameFor(model => model.DateOfBirth)
+                </dt>
+                <dd class="col-sm-8">
+                    @Html.DisplayFor(model => model.DateOfBirth)
+                </dd>
+            </dl>
+        </div>
+    </div>
+
+    <div class="d-flex justify-content-center mt-4">
+        <a asp-action="UpdateStudent" asp-route-id="@Model?.StudentId" class="btn btn-warning me-3">
+            <i class="bi bi-pencil-square"></i> Edit
+        </a>
+
+        @if (isAdmin)
+        {
+            <a asp-controller="Admin" asp-action="AdminDashboard" class="btn btn-secondary me-3">
+                <i class="bi bi-arrow-left"></i> Go To Admin Dashboard
+            </a>
+            <a asp-controller="Student" asp-action="GetAllStudents" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back To List
+            </a>
+        }
+        else
+        {
+            <a asp-controller="Student" asp-action="StudentDashboard" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Go To Student Dashboard
+            </a>
+        }
+    </div>
+
+</div>

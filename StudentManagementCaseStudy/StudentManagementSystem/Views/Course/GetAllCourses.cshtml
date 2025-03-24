@@ -1,0 +1,75 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> _userManager
+
+@model IEnumerable<StudentManagementSystem.Models.Course>
+
+@{
+    ViewData["Title"] = "Courses";
+    var user = _userManager.GetUserAsync(User).Result;
+    var isAdmin = user != null && _userManager.IsInRoleAsync(user, "Admin").Result;
+    var isStudent = user != null && _userManager.IsInRoleAsync(user, "Student").Result;
+}
+
+<h1 class="text-center mb-4">Courses</h1>
+
+@if (isAdmin)
+{
+    <p class="text-center">
+        <a asp-action="AddCourse" class="btn btn-primary">Add New Course</a>
+    </p>
+}
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow d-flex flex-column">
+                    <img src="@(!string.IsNullOrEmpty(item.ImageUrl) ? Url.Content(item.ImageUrl) : "/images/CSE.jpg")"
+                         class="card-img-top" alt="@item.CourseName" style="height: 200px; object-fit: cover;">
+
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">@item.CourseName</h5>
+
+                        <div class="mt-auto">
+                            <a asp-action="GetCourseById" asp-route-id="@item.CourseId" class="btn btn-info">Details</a>
+                            @if (isAdmin)
+                            {
+                                <a asp-action="UpdateCourse" asp-route-id="@item.CourseId" class="btn btn-warning">Edit</a>
+                                <a asp-action="DeleteCourse" asp-route-id="@item.CourseId" class="btn btn-danger">Delete</a>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    @if(isAdmin)
+    {
+        <div class="text-center mt-5">
+            <a asp-controller="Admin" asp-action="AdminDashboard" class="btn btn-primary me-3">
+                <i class="bi bi-house-door"></i> Go to Admin Dashboard
+            </a>
+        </div>
+    }
+    else if(isStudent)
+    {
+        <div class="text-center mt-5">
+            <a asp-controller="Student" asp-action="StudentDashboard" class="btn btn-primary me-3">
+                <i class="bi bi-house-door"></i> Go to Student Dashboard
+            </a>
+            <a asp-controller="Enrollment" asp-action="EnrollStudent" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Enroll Now
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="text-center mt-5">
+           
+            <a asp-controller="Home" asp-action="Index" class="btn btn-success">
+                <i class="bi bi-check-circle"></i> Back
+            </a>
+        </div>
+    }
+</div>

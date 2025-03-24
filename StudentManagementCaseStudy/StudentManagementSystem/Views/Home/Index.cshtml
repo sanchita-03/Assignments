@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="container-fluid p-0">
+    <div class="hero-section d-flex align-items-center justify-content-center text-center">
+        <div class="overlay p-5 rounded">
+            <h1 class="display-3 fw-bold text-white">Welcome to Student Management System</h1>
+            <p class="lead text-white">Manage courses, enrollments, and student records effortlessly.</p>
+            <a asp-controller="Course" asp-action="GetAllCourses" class="btn btn-light btn-lg mt-3">Explore Courses</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<style>
+    .hero-section {
+        height: 68vh;
+        
+        position: relative;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 100px;
+        border-radius: 10px;
+       
+    }
+</style>

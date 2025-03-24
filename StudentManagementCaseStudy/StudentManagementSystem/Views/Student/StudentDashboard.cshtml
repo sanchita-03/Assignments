@@ -1,0 +1,54 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using StudentManagementSystem.Context
+@inject UserManager<ApplicationUser> UserManager
+@inject StudentDbContext _context
+
+@{
+    ViewData["Title"] = "StudentDashboard";
+    var currentUser = await UserManager.GetUserAsync(User);
+    var student = _context.Students.FirstOrDefault(s => s.UserId == currentUser.Id);
+    var studentId = student?.StudentId ?? 0; // Get StudentId, default to 0 if null
+}
+
+<div class="container mt-4">
+    <h2 class="text-center">Student Dashboard</h2>
+
+    <div class="row">
+        <!-- Profile Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Profile</h5>
+                    <p class="card-text">View and update your personal details.</p>
+                    <a href="@Url.Action("GetStudentById", "Student", new { id = studentId })" class="btn btn-primary">
+                        View Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Courses Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Courses</h5>
+                    <p class="card-text">View all available courses.</p>
+                    <a href="@Url.Action("GetAllCourses", "Course")" class="btn btn-success">View Courses</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Enrollments Card -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title">Enrollments</h5>
+                    <p class="card-text">Enroll or withdraw from courses.</p>
+                    <a href="@Url.Action("GetEnrollmentsByStudentId", "Enrollment", new { studentId = studentId })" class="btn btn-info">
+                        Manage Enrollments
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

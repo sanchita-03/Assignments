@@ -1,0 +1,59 @@
+﻿@model StudentManagementSystem.Models.Course
+
+@{
+    ViewData["Title"] = "Update Course";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <div class="card-header bg-primary text-white text-center">
+            <h2>Update Course</h2>
+        </div>
+
+        <div class="card-body">
+            <form asp-action="UpdateCourse">
+                <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
+                <input type="hidden" asp-for="CourseId" />
+
+                <div class="mb-3">
+                    <label asp-for="CourseName" class="form-label fw-bold"></label>
+                    <input asp-for="CourseName" class="form-control" placeholder="Enter Course Name" />
+                    <span asp-validation-for="CourseName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Description" class="form-label fw-bold"></label>
+                    <textarea asp-for="Description" class="form-control" rows="3" placeholder="Enter Description"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="Credits" class="form-label fw-bold"></label>
+                    <input asp-for="Credits" type="number" class="form-control" placeholder="Enter Credits" />
+                    <span asp-validation-for="Credits" class="text-danger"></span>
+                </div>
+
+                <div class="text-center">
+                    <form asp-action="UpdateCourse" method="post">
+                        <input type="hidden" name="returnUrl" value="@Context.Request.Query["returnUrl"]" />
+                        <input type="hidden" asp-for="CourseId" />
+
+                        <!-- Other form fields -->
+
+                        <button type="submit" class="btn btn-success">Save Changes</button>
+                    </form>
+
+                    <a asp-action="GetAllCourses" class="btn btn-secondary">
+                        <i class="bi bi-arrow-left"></i> Back to Courses
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

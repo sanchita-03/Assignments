@@ -1,0 +1,46 @@
+﻿@model StudentManagementSystem.Models.Enrollment
+
+@{
+    ViewData["Title"] = "Enroll Student";
+}
+
+<h1 class="text-primary">Enroll Student</h1>
+
+<div class="card shadow-lg p-4">
+    <div class="card-body">
+        <h4 class="text-dark text-center mb-4">Enrollment Form</h4>
+        <hr />
+
+        <form asp-action="EnrollStudent" asp-controller="Enrollment" method="post">
+            <input type="hidden" name="studentId" value="@ViewData["StudentId"]" />
+
+            <div class="mb-3">
+                <label class="form-label fw-bold">Student Name</label>
+                <input type="text" class="form-control" value="@ViewData["StudentName"]" readonly />
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="CourseId" class="form-label fw-bold"></label>
+                <select name="courseId" class="form-control" asp-items="@ViewData["CourseId"] as SelectList">
+                    <option value="">--Select Course--</option>
+                </select>
+            </div>
+
+            <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-success me-3">
+                    <i class="bi bi-check-circle"></i> Enroll
+                </button>
+                <a asp-controller="Course" asp-action="GetAllCourses" class="btn btn-secondary">
+                    <i class="bi bi-arrow-left"></i> Back to Courses
+                </a>
+            </div>
+        </form>
+
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,107 @@
+﻿/* Container Styling */
+.add-student-container {
+    width: 770px; /* Increased width */
+    background: white;
+    padding: 27px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    padding-top: 70px; /* Space for the title */
+}
+
+    /* Wavy Shape Effect */
+    .add-student-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 150px;
+        background: linear-gradient(to right, #0f4c75, #3282b8);
+        clip-path: ellipse(60% 50% at 50% 0%);
+        z-index: 0;
+    }
+
+    /* Page Title */
+    .add-student-container h1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-size: 24px;
+        font-weight: 700;
+        z-index: 2;
+    }
+
+    /* Form Layout */
+    .add-student-container form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+/* Row Layout for Pairing Fields */
+.row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 10px
+}
+
+/* Form Group (Styling for Inputs) */
+.form-group {
+    flex: 1;
+}
+
+/* Input Fields */
+.add-student-container .form-control {
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    padding: 12px;
+    font-size: 14px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+    .add-student-container .form-control:focus {
+        border-color: #0f4c75;
+        box-shadow: 0px 0px 8px rgba(15, 76, 117, 0.4);
+        outline: none;
+    }
+
+/* Submit Button */
+.add-student-container .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 25px;
+    background: linear-gradient(to right, #0f4c75, #3282b8);
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+    .add-student-container .btn-primary:hover {
+        background: linear-gradient(to right, #3282b8, #0f4c75);
+        box-shadow: 0px 4px 8px rgba(15, 76, 117, 0.3);
+    }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-student-container {
+        width: 90%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}

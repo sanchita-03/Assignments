@@ -1,0 +1,55 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> _userManager
+@model StudentManagementSystem.Models.Course
+
+@{
+    ViewData["Title"] = "Course Details";
+    var user = _userManager.GetUserAsync(User).Result;
+    var isAdmin = user != null && _userManager.IsInRoleAsync(user, "Admin").Result;
+    var isStudent = user != null && _userManager.IsInRoleAsync(user, "Student").Result;
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg p-4">
+        <div class="card-header bg-primary text-white text-center">
+            <h2>@Model.CourseName</h2>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="@(!string.IsNullOrEmpty(Model.ImageUrl) ? Url.Content(Model.ImageUrl) : "/images/CSE.jpg")"
+                    alt="@Model.CourseName" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <dl class="row">
+                        <dt class="col-sm-4 fw-bold">Course Name:</dt>
+                        <dd class="col-sm-8">@Model.CourseName</dd>
+
+                        <dt class="col-sm-4 fw-bold">Description:</dt>
+                        <dd class="col-sm-8">@Model.Description</dd>
+
+                        <dt class="col-sm-4 fw-bold">Credits:</dt>
+                        <dd class="col-sm-8">@Model.Credits</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer text-center">
+            @if (isAdmin)
+            {
+                <a asp-action="UpdateCourse" asp-route-id="@Model?.CourseId" asp-route-returnUrl="@Context.Request.Path" class="btn btn-warning">
+                    Edit
+                </a>
+            }
+            else if(isStudent){
+                <a asp-controller="Enrollment" asp-action="EnrollStudent" asp-route-returnUrl="@Context.Request.Path" class="btn btn-warning">
+                   Go To Enrollment
+                </a>
+            }
+            <a asp-action="GetAllCourses" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Courses
+            </a>
+        </div>
+    </div>
+</div>

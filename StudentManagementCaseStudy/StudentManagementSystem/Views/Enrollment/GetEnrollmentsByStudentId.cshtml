@@ -1,0 +1,80 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> _userManager
+
+@model IEnumerable<StudentManagementSystem.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "Get Enrollments By Student";
+    var user = _userManager.GetUserAsync(User).Result;
+    var isAdmin = user != null && _userManager.IsInRoleAsync(user, "Admin").Result;
+}
+
+<h1 class="text-primary text-center my-4">Enrolled Courses</h1>
+
+@if (Model.Any())
+{
+    <h3 class="text-center text-secondary">Student: @Model.First().Student.Name</h3>
+}
+
+<div class="card shadow-lg mt-4">
+    <div class="card-body">
+        <table class="table table-hover table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th class="text-center">Course Name</th>
+                    <th class="text-center">Grade</th>
+                    @if(!isAdmin)
+                    {
+                        <th class="text-center">Actions</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-center">@item.Course.CourseName</td>
+                        <td class="text-center">@item.Grade</td>
+                        @if(!isAdmin)
+                        {
+                            <td class="text-center">
+                                <a asp-action="WithdrawStudent" asp-route-studentId="@item.StudentId" asp-route-courseId="@item.CourseId"
+                                   class="btn btn-danger btn-sm">
+                                    <i class="bi bi-x-circle"></i> Withdraw from Course
+                                </a>
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="text-center mt-3">
+    @if(isAdmin)
+    {
+        <!-- Go to Student Dashboard Button -->
+        <a asp-controller="Admin" asp-action="AdminDashboard" class="btn btn-primary">
+            <i class="bi bi-house-door"></i> Go to Admin Dashboard
+        </a>
+
+        <!-- Back to Courses Button -->
+        <a asp-controller="Enrollment" asp-action="GetEnrollments" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Go Back
+        </a>
+    }
+    else
+    {
+        <!-- Go to Student Dashboard Button -->
+        <a asp-controller="Student" asp-action="StudentDashboard" class="btn btn-primary">
+            <i class="bi bi-house-door"></i> Go to Student Dashboard
+        </a>
+
+        <!-- Back to Courses Button -->
+        <a asp-controller="Course" asp-action="GetAllCourses" class="btn btn-secondary">
+            <i class="bi bi-arrow-left"></i> Go to Courses
+        </a>
+    }
+</div>
+

@@ -1,0 +1,152 @@
+﻿/* register page */
+.register-container {
+    width: 450px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 50px;
+}
+
+    /* Stylish Header */
+    .register-container h1 {
+        text-align: center;
+        color: white;
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Background shape */
+    .register-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 160px;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        clip-path: ellipse(60% 50% at 50% 0%);
+        z-index: 1;
+    }
+
+    /* Form Fields */
+    .register-container .form-group {
+        margin-bottom: 15px;
+    }
+
+    /* Inputs */
+    .register-container .form-control {
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        padding: 12px;
+        font-size: 14px;
+        transition: 0.3s;
+        width: 100%;
+    }
+
+        .register-container .form-control:focus {
+            border-color: #1e3c72;
+            box-shadow: 0px 0px 6px rgba(30, 60, 114, 0.3);
+        }
+
+    /* Button */
+    .register-container .btn-primary {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 25px;
+        background: linear-gradient(to right, #1e3c72, #2a5298);
+        border: none;
+        color: white;
+        transition: 0.3s;
+    }
+
+        .register-container .btn-primary:hover {
+            background: linear-gradient(to right, #2a5298, #1e3c72);
+        }
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .register-container {
+        width: 90%;
+    }
+}
+
+
+/*login css*/
+/* Centered Login Form */
+.login-container {
+    width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+}
+
+    /* Header */
+    .login-container h1 {
+        color: #0f4c75;
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Form Inputs */
+    .login-container .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    .login-container .form-control {
+        border-radius: 25px;
+        border: 1px solid #ccc;
+        padding: 12px;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+        .login-container .form-control:focus {
+            border-color: #0f4c75;
+            box-shadow: 0px 0px 6px rgba(15, 76, 117, 0.3);
+        }
+
+    /* Remember Me Checkbox */
+    .login-container .form-check-label {
+        font-size: 14px;
+        color: #333;
+    }
+
+    /* Login Button */
+    .login-container .btn-primary {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 25px;
+        background: linear-gradient(to right, #0f4c75, #3282b8);
+        border: none;
+        color: white;
+        transition: 0.3s;
+    }
+
+        .login-container .btn-primary:hover {
+            background: linear-gradient(to right, #3282b8, #0f4c75);
+        }
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .login-container {
+        width: 90%;
+    }
+}

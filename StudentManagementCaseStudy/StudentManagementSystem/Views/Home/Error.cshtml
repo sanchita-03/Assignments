@@ -1,0 +1,26 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject UserManager<ApplicationUser> _userManager
+
+@{
+    ViewData["Title"] = "Error";
+    var user = _userManager.GetUserAsync(User).Result;
+    var isAdmin = user != null && _userManager.IsInRoleAsync(user, "Admin").Result;
+    var isStudent = user != null && _userManager.IsInRoleAsync(user, "Student").Result;
+}
+
+<div class="container mt-5">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Error:</strong> @TempData["ErrorMessage"]
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    @if(isAdmin){
+        <a href="@Url.Action("AdminDashboard", "Admin")" class="btn btn-primary">Back to AdminDashboard</a>
+    }
+    else if(isStudent){
+        <a href="@Url.Action("StudentDashboard", "Student")" class="btn btn-primary">Back to StudentDashboard</a>
+    }
+    else{
+        <a href="@Url.Action("GetAllCourses", "Course")" class="btn btn-primary">Go to Courses</a>
+    }
+    
+</div>

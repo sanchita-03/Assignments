@@ -1,0 +1,67 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<ApplicationUser> _signInManager
+@inject UserManager<ApplicationUser> _userManager
+
+@model IEnumerable<StudentManagementSystem.Models.Enrollment>
+
+@{
+    ViewData["Title"] = "GetEnrollments";
+    var user = _userManager.GetUserAsync(User).Result;
+    var isAdmin = user != null && _userManager.IsInRoleAsync(user, "Admin").Result;
+}
+
+<div class="container mt-4">
+    <h2 class="text-center text-primary mb-4">Enrollments</h2>
+
+    <div class="d-flex justify-content-between mb-3">
+        @* <a asp-action="Create" class="btn btn-success"> *@
+        @*     <i class="bi bi-plus-circle"></i> Create New Enrollment *@
+        @* </a> *@
+        @if(isAdmin)
+        {
+            <a asp-controller="Admin" asp-action="AdminDashboard" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Dashboard
+            </a>
+        }
+        else
+        {
+            <a asp-controller="Student" asp-action="StudentDashboard" class="btn btn-secondary">
+                <i class="bi bi-arrow-left"></i> Back to Dashboard
+            </a>
+        }
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped shadow-sm">
+            <thead class="table-dark">
+                <tr>
+                    <th>@Html.DisplayNameFor(model => model.Student)</th>
+                    <th>@Html.DisplayNameFor(model => model.Course)</th>
+                    <th>@Html.DisplayNameFor(model => model.Grade)</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@Html.DisplayFor(modelItem => item.Student.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Course.CourseName)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Grade)</td>
+                        <td class="text-center">
+                            @* <a asp-action="GetEnrollmentsByStudentId" asp-route-studentId="@item.StudentId" class="btn btn-warning btn-sm"> *@
+                            @*     <i class="bi bi-pencil"></i> Edit *@
+                            @* </a> *@
+                            <a asp-action="GetEnrollmentsByStudentId" asp-route-id="@item.StudentId" class="btn btn-info btn-sm">
+                                <i class="bi bi-info-circle"></i> Details
+                            </a>
+                            @* <a asp-action="Delete" asp-route-id="@item.EnrollmentId" class="btn btn-danger btn-sm"> *@
+                            @*     <i class="bi bi-trash"></i> Delete *@
+                            @* </a> *@
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
