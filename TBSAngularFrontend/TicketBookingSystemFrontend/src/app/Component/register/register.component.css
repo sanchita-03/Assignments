@@ -1,0 +1,58 @@
+/* Background */
+body {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Centering the register form */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px); /* Adjust to avoid navbar overlap */
+    padding-top: 20px;
+}
+
+/* Styling the card */
+.card {
+    margin-top: 70px;
+    width: 650px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+/* Input focus effect */
+.form-control:focus {
+    border-color: #6e8efb;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.5);
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #6e8efb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #5a7bd4;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}

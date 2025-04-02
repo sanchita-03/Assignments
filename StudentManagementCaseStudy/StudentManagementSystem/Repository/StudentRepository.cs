@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Reflection;
+using Microsoft.EntityFrameworkCore;
 using StudentManagementSystem.Context;
 using StudentManagementSystem.Exceptions;
 using StudentManagementSystem.Models;

@@ -1,0 +1,66 @@
+<div class="register-container">
+    <div class="card">
+        <h2 class="fw-bold text-center">Register</h2>
+        <form [formGroup]="registerForm" (ngSubmit)="registerUser()">
+            
+            <!-- Row for First Name & Last Name -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" formControlName="firstName">
+                    <div class="error" *ngIf="registerForm.get('firstName')?.touched && registerForm.get('firstName')?.invalid">
+                        First Name is required
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" formControlName="lastName">
+                    <div class="error" *ngIf="registerForm.get('lastName')?.touched && registerForm.get('lastName')?.invalid">
+                        Last Name is required
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row for Phone Number & Email -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="phoneNumber" class="form-label">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" formControlName="phoneNumber">
+                    <div class="error" *ngIf="registerForm.get('phoneNumber')?.touched && registerForm.get('phoneNumber')?.invalid">
+                        Phone Number is required
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" formControlName="email">
+                    <div class="error" *ngIf="registerForm.get('email')?.touched && registerForm.get('email')?.invalid">
+                        Valid Email is required
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row for Username & Password -->
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="userName" class="form-label">Username</label>
+                    <input type="text" class="form-control" id="userName" formControlName="userName">
+                    <div class="error" *ngIf="registerForm.get('userName')?.touched && registerForm.get('userName')?.invalid">
+                        Username is required
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" formControlName="password">
+                    <div class="error" *ngIf="registerForm.get('password')?.touched && registerForm.get('password')?.invalid">
+                        Password is required
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+        </form>
+    </div>
+</div>

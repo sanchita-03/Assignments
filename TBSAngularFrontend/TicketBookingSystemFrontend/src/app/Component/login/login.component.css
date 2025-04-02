@@ -1,0 +1,47 @@
+/* Centering the login form */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background: linear-gradient(135deg, #6e8efb, #a777e3); */
+  }
+  
+  /* Styling the card */
+  .card {
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: white;
+  }
+  
+  /* Input focus effect */
+  .form-control:focus {
+    border-color: #6e8efb;
+    box-shadow: 0 0 8px rgba(110, 142, 251, 0.5);
+  }
+  
+  /* Button styling */
+  .btn-primary {
+    background-color: #6e8efb;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a7bd4;
+  }
+  
+  /* Error message styling */
+  .text-danger {
+    font-size: 12px;
+  }
+  
+  .alert {
+    font-size: 14px;
+    text-align: center;
+  }
+  

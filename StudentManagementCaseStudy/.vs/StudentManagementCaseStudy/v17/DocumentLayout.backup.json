@@ -3,12 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\repository\\studentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\configurations\\roleseedconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\configurations\\roleseedconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\configurations\\userroleseedconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\configurations\\userroleseedconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\context\\studentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\context\\studentdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\views\\course\\getallcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\views\\course\\getallcourses.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|solutionrelative:studentmanagementsystem\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{304BAF68-071F-41DF-BB4F-3DC6E308316C}|StudentManagementSystem\\StudentManagementSystem.csproj|c:\\users\\user\\onedrive\\desktop\\dotnet_assignments\\assignments\\studentmanagementcasestudy\\studentmanagementsystem\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -54,24 +90,132 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "RoleSeedConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Configurations\\RoleSeedConfiguration.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Configurations\\RoleSeedConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Configurations\\RoleSeedConfiguration.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Configurations\\RoleSeedConfiguration.cs",
+              "ViewState": "AgIAAAYAAAAMZWZmZmY0wAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T15:03:05.165Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRoleSeedConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Configurations\\UserRoleSeedConfiguration.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Configurations\\UserRoleSeedConfiguration.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Configurations\\UserRoleSeedConfiguration.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Configurations\\UserRoleSeedConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T15:03:03.901Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "StudentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Repository\\StudentRepository.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Repository\\StudentRepository.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Repository\\StudentRepository.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Repository\\StudentRepository.cs",
+              "ViewState": "AgIAABsAAAAA/f////8vwBIAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T13:25:19.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Program.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:47:11.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\appsettings.json",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\appsettings.json",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\appsettings.json",
+              "RelativeToolTip": "StudentManagementSystem\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-26T18:31:04.664Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Models\\Student.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\Student.cs",
+              "ViewState": "AgIAAAEAAAAAaGZmZmYewCcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:20:10.06Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Context\\StudentDbContext.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Context\\StudentDbContext.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Context\\StudentDbContext.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Context\\StudentDbContext.cs",
+              "ViewState": "AgIAAAcAAAAw//////8wwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T18:19:41.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T08:05:03.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "StudentManagementSystem\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "StudentManagementSystem\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAD4AAAAAsJmZmZn7vwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T07:57:49.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "StudentManagementSystem\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAEgAAABALjMzM5MwwCsAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAMzMzM3MvwAQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T09:20:10.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-24T09:20:10.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Home\\Index.cshtml",
@@ -83,19 +227,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
               "Title": "GetAllCourses.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Course\\GetAllCourses.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Course\\GetAllCourses.cshtml",
               "ToolTip": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Course\\GetAllCourses.cshtml",
               "RelativeToolTip": "StudentManagementSystem\\Views\\Course\\GetAllCourses.cshtml",
-              "ViewState": "AgIAACEAAACAlpmZmRkWwBsAAAB0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-24T09:09:30.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 12,
               "Title": "Course.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Models\\Course.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Course.cs",
@@ -107,7 +251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 13,
               "Title": "Enrollment.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Models\\Enrollment.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Models\\Enrollment.cs",
@@ -119,7 +263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 16,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Home\\Error.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Home\\Error.cshtml",
@@ -131,7 +275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 17,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Shared\\Error.cshtml",
@@ -143,7 +287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "ExceptionHandlerAttribute.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\AspectOrientedPrograming\\ExceptionHandlerAttribute.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\AspectOrientedPrograming\\ExceptionHandlerAttribute.cs",
@@ -155,7 +299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "CourseNotFoundException.cs",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Exceptions\\CourseNotFoundException.cs",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Exceptions\\CourseNotFoundException.cs",
@@ -167,7 +311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 14,
               "Title": "LogIn.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Account\\LogIn.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Account\\LogIn.cshtml",
@@ -179,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 15,
               "Title": "Register.cshtml",
               "DocumentMoniker": "C:\\Users\\User\\OneDrive\\Desktop\\Dotnet_assignments\\Assignments\\StudentManagementCaseStudy\\StudentManagementSystem\\Views\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "StudentManagementSystem\\Views\\Account\\Register.cshtml",

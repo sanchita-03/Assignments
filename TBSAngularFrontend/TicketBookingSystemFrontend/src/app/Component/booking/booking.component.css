@@ -1,0 +1,19 @@
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 900px;
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+}
+.mt-5{
+    margin-top: 5.5rem !important;
+}

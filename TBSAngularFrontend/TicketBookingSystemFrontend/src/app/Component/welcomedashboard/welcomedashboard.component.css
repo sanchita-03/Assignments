@@ -1,0 +1,19 @@
+.welcome-container {
+    margin-top: 100px;
+    height: 75vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+.welcome-content {
+    max-width: 600px;
+}
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.btn-primary:hover {
+    background-color: #ff3b2f;
+}
