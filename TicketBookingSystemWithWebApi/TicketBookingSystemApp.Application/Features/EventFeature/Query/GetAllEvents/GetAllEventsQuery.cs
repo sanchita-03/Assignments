@@ -4,6 +4,6 @@ using TicketBookingSystemApp.Domain;
 
 namespace TicketBookingSystemApp.Application.Features.BookingFeature.Query.GetAllEvents
 {
-    public record class GetAllEventsQuery(): IRequest<IEnumerable<Event>>;
+    public record class GetAllEventsQuery(): IRequest<IEnumerable<EventEntity>>;
     
 }

@@ -9,10 +9,10 @@ namespace TicketBookingSystemApp.Application.Interfaces
 {
     public interface IEventRepository
     {
-        Task<IEnumerable<Event>> GetAllEventsAsync();
-        Task<int> AddEventAsync(Event tktEvent);
-        Task<Event> GetEventByIdAsync(int eventId);
+        Task<IEnumerable<EventEntity>> GetAllEventsAsync();
+        Task<int> AddEventAsync(EventEntity tktEvent);
+        Task<EventEntity> GetEventByIdAsync(int eventId);
         Task<int> DeleteEventAsync(int eventId);
-        Task<int> UpdateEventAsync(Event tktEvent);
+        Task<int> UpdateEventAsync(EventEntity tktEvent);
     }
 }

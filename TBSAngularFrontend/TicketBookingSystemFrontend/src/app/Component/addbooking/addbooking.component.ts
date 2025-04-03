@@ -3,8 +3,11 @@ import { BookingService } from '../../services/booking.service';
 import { Booking, Status } from '../../model/booking';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
-import Swal from 'sweetalert2';  // ✅ Import SweetAlert2
+import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
+import { EventmodelService } from '../../services/eventmodel.service'; // ✅ Import Event Service
+import { Observable } from 'rxjs'; // ✅ Import Observable
+import { Eventmodel } from '../../model/eventmodel';
 
 @Component({
   selector: 'app-addbooking',
@@ -14,18 +17,33 @@ import { Router } from '@angular/router';
   styleUrl: './addbooking.component.css'
 })
 export class AddbookingComponent {
-  bookings: Booking[] = [];
   seatNumberInput: string = "";
+  eventsList$: Observable<Eventmodel[]>; // ✅ Observable instead of array
+  username: string | null = '';
 
   newBooking: Booking = {
     userId: undefined,
     eventId: undefined,
     seatNumber: [],
-    bookingDate: new Date(),  // Default to current date
-    status: Status.Pending     // Default to "Pending"
+    bookingDate: new Date(),
+    status: Status.Pending
   };
 
-  constructor(private bookingService: BookingService, private router: Router) {}
+  constructor(
+    private bookingService: BookingService,
+    private eventService: EventmodelService, // ✅ Inject Event Service
+    private router: Router
+  ) {
+    this.eventsList$ = this.eventService.getAllEvents(); // ✅ Assign service call directly to Observable
+  }
+
+
+  ngOnInit(): void {
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      this.username = JSON.parse(userData).username; // ✅ Extract username from stored object
+    }
+  }
 
   addBookings(): void {
     this.newBooking.seatNumber = this.seatNumberInput
@@ -36,19 +54,16 @@ export class AddbookingComponent {
     this.bookingService.addBookings(this.newBooking).subscribe({
       next: (res) => {
         console.log('Booking Added:', res);
-        this.bookings.push(res);
 
-        // ✅ Success Alert
         Swal.fire({
           title: 'Success!',
           text: `Booking for Event ID ${this.newBooking.eventId} has been added successfully.`,
           icon: 'success',
           confirmButtonText: 'OK'
         }).then(() => {
-          this.router.navigate(['/getallbookings']); // ✅ Navigate to Get All Bookings page
-        });;
+          this.router.navigate(['/getallbookings']);
+        });
 
-        // Reset form after submission
         this.newBooking = {
           userId: undefined,
           eventId: undefined,
@@ -60,11 +75,13 @@ export class AddbookingComponent {
       },
       error: (err) => {
         console.error('Booking Failed:', err);
-
-        // ❌ Error Alert
+        let errorMessage = 'An error occurred while adding the booking. Please try again.';
+        if (err.error && err.error.message) {
+          errorMessage = err.error.message;
+        }
         Swal.fire({
           title: 'Booking Failed!',
-          text: 'An error occurred while adding the booking. Please try again.',
+          text: errorMessage,
           icon: 'error',
           confirmButtonText: 'OK'
         });

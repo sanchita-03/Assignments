@@ -1,0 +1,45 @@
+<div class="container mt-4  justify-content-center">
+    <table class="table table-bordered table-striped">
+       <thead>
+         <tr>
+           
+           <th scope="col">Event Name</th>
+           <th scope="col">Description</th>
+           <th scope="col">Date</th>
+           <th scope="col">Venue</th>
+           <th scope="col">Total Seats</th>
+           <th scope="col">Available seats</th>
+           <th scope="col">Price per Seat</th>
+           <th scope="col">Event Type</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr *ngFor="let event of eventmodel"> 
+           <td>{{event.eventName}}</td>
+           <td>{{event.description}}</td>
+           <td>{{event.date}}</td>
+           <td>{{event.venue}}</td>
+           <td>{{event.totalSeats}}</td>
+           <td>{{event.availableSeats}}</td>
+           <td>{{event.price}}</td>
+           <td>{{ getStatusText(event.eventType) }}</td>
+           <!-- eventId? : number;
+        eventName? : string;
+        description? : string;
+        date? : Date;
+        venue? : string;
+        totalSeats? : number;
+        availableSeats? : number;
+        price? : number;
+        eventType? : EventType -->
+           <td>
+               <button type="button" class="btn btn-primary">Update</button>
+           </td>
+         </tr>
+        
+       </tbody>
+       
+     </table>
+   </div> 
+
+   

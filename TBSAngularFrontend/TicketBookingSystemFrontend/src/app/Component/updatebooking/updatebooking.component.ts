@@ -67,7 +67,7 @@ export class UpdatebookingComponent {
         icon: 'success',
         confirmButtonText: 'OK'
       }).then(() => {
-        this.router.navigate(['/bookings']); // ✅ Redirect after update
+        this.router.navigate(['/getallbookings']); // ✅ Redirect after update
       });
     },
     error: (err) => {

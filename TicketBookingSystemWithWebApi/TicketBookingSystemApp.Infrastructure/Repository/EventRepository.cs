@@ -14,7 +14,7 @@ namespace TicketBookingSystemApp.Infrastructure.Repository
             _ticketBookingDbContext = ticketBookingDbContext;
         }
 
-        public async Task<int> AddEventAsync(Event tktEvent)
+        public async Task<int> AddEventAsync(EventEntity tktEvent)
         {
             await _ticketBookingDbContext.Events.AddAsync(tktEvent);
             return await _ticketBookingDbContext.SaveChangesAsync();
@@ -27,18 +27,18 @@ namespace TicketBookingSystemApp.Infrastructure.Repository
             return await _ticketBookingDbContext.SaveChangesAsync();
         }
 
-        public async Task<IEnumerable<Event>> GetAllEventsAsync()
+        public async Task<IEnumerable<EventEntity>> GetAllEventsAsync()
         {
             return await _ticketBookingDbContext.Events.ToListAsync();
         }
 
-        public async Task<Event> GetEventByIdAsync(int eventId)
+        public async Task<EventEntity> GetEventByIdAsync(int eventId)
         {
             var getEvent = await _ticketBookingDbContext.Events.FindAsync(eventId);
             return getEvent;
         }
 
-        public async Task<int> UpdateEventAsync(Event tktEvent)
+        public async Task<int> UpdateEventAsync(EventEntity tktEvent)
         {
             var getEvent = await GetEventByIdAsync(tktEvent.EventId);
             getEvent.EventName = tktEvent.EventName;

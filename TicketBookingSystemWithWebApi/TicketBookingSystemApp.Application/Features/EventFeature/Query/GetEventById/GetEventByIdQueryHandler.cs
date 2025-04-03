@@ -10,14 +10,14 @@ using TicketBookingSystemApp.Domain;
 
 namespace TicketBookingSystemApp.Application.Features.EventFeature.Query.GetEventById
 {
-    public class GetEventByIdQueryHandler : IRequestHandler<GetEventByIdQuery, Event>
+    public class GetEventByIdQueryHandler : IRequestHandler<GetEventByIdQuery, EventEntity>
     {
         readonly IEventRepository _eventRepository;
         public GetEventByIdQueryHandler(IEventRepository eventRepository)
         {
             _eventRepository = eventRepository;
         }
-        public async Task<Event> Handle(GetEventByIdQuery request, CancellationToken cancellationToken)
+        public async Task<EventEntity> Handle(GetEventByIdQuery request, CancellationToken cancellationToken)
         {
             var getEvent = await _eventRepository.GetEventByIdAsync(request.eventId);
             if (getEvent == null)

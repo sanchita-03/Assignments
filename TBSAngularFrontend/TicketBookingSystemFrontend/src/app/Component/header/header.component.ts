@@ -10,13 +10,18 @@ import { UserService } from '../../services/user.service';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css',
 })
-export class HeaderComponent  {
+export class HeaderComponent implements OnInit {
   // isLoggedIn: boolean = false;
   username: string | null = '';
 
   constructor(private router: Router,public userservice:UserService) {}
 
-
+  ngOnInit(): void {
+    const userData = localStorage.getItem('user');
+    if (userData) {
+      this.username = JSON.parse(userData).username; // ✅ Extract username from stored object
+    }
+  }
 
   logout() {
     localStorage.clear();

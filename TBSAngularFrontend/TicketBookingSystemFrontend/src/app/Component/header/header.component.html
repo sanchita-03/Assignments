@@ -13,7 +13,7 @@
     <!-- Navbar Items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item" *ngIf="userservice.isLoggedIn()">
+        <li class="nav-item">
           <a class="nav-link text-white" routerLink="/welcomedashboard" routerLinkActive="active">🏠 Home</a>
         </li>
         <li class="nav-item" *ngIf="userservice.isLoggedIn()">
@@ -25,7 +25,7 @@
 
         <!-- User Info & Logout -->
         <li class="nav-item d-flex align-items-center" *ngIf="userservice.isLoggedIn()">
-          <span class="nav-link text-white fw-bold me-2">👤 Welcome, {{ username }}</span>
+          <span class="nav-link text-white fw-bold me-2">👤 Welcome {{username}}</span>
           <button class="btn btn-danger btn-sm" (click)="logout()">Logout</button>
         </li>
 
@@ -36,6 +36,12 @@
         <li class="nav-item" *ngIf="!userservice.isLoggedIn()">
           <a class="nav-link text-white" routerLink="/login" routerLinkActive="active">🔑 Login</a>
         </li>
+        <li class="nav-item" *ngIf="!userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/getallevents" routerLinkActive="active">Events</a>
+        </li>
+        <!-- <li class="nav-item" *ngIf="!userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/welcomedashboard" routerLinkActive="active">🏠 Home</a>
+        </li> -->
       </ul>
     </div>
   </div>

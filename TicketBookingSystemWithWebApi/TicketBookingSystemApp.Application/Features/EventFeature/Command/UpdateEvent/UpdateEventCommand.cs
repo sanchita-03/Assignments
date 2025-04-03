@@ -8,6 +8,6 @@ using TicketBookingSystemApp.Domain;
 
 namespace TicketBookingSystemApp.Application.Features.EventFeature.Command.UpdateEvent
 {
-    public record UpdateEventCommand(Event tktEvent) : IRequest<int>;
+    public record UpdateEventCommand(EventEntity tktEvent) : IRequest<int>;
     
 }

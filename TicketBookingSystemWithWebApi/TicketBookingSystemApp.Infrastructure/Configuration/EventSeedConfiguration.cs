@@ -9,13 +9,13 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using TicketBookingSystemApp.Domain.Constant;
 namespace TicketBookingSystemApp.Infrastructure.Configuration
 {
-    public class EventSeedConfiguration : IEntityTypeConfiguration<Event>
+    public class EventSeedConfiguration : IEntityTypeConfiguration<EventEntity>
     {
-        public void Configure(EntityTypeBuilder<Event> builder)
+        public void Configure(EntityTypeBuilder<EventEntity> builder)
         {
             builder.HasData
             (
-                new Event
+                new EventEntity
                 {
                     EventId = 1, // Required for seeding, but auto-incremented during runtime
                     EventName = "Tech Conference 2025",
@@ -26,7 +26,7 @@ namespace TicketBookingSystemApp.Infrastructure.Configuration
                     Price = 2999,
                     EventType = EventType.Conference
                 },
-                new Event
+                new EventEntity
                 {
                     EventId = 2,
                     EventName = "Music Fest 2025",

@@ -8,5 +8,5 @@ using TicketBookingSystemApp.Domain;
 
 namespace TicketBookingSystemApp.Application.Features.EventFeature.Command.AddEvent
 {
-    public record AddEventCommand(Event tktEvent):IRequest<int>;
+    public record AddEventCommand(EventEntity tktEvent):IRequest<int>;
 }

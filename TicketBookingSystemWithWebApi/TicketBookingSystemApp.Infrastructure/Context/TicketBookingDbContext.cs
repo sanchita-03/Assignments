@@ -22,7 +22,7 @@ namespace TicketBookingSystemApp.Infrastructure.Context
             modelBuilder.Entity<Booking>()
                         .Property(b => b.Status)
                         .HasConversion<string>();
-            modelBuilder.Entity<Event>()
+            modelBuilder.Entity<EventEntity>()
                         .Property(b => b.EventType)
                         .HasConversion<string>();
             modelBuilder.Entity<Payment>()
@@ -33,7 +33,7 @@ namespace TicketBookingSystemApp.Infrastructure.Context
                         .HasConversion<string>();
         }
         public DbSet<Booking> Bookings { get; set; }
-        public DbSet<Event> Events { get; set; }
+        public DbSet<EventEntity> Events { get; set; }
         public DbSet<Payment> Payments { get; set; }
         public DbSet<User> Users { get; set; }
         //public DbSet<BookingSeat> BookingSeats { get; set; }

@@ -8,6 +8,7 @@ import { UpdatebookingComponent } from './Component/updatebooking/updatebooking.
 import { CancelBookingComponent } from './Component/cancelbooking/cancelbooking.component';
 import { WelcomedashboardComponent } from './Component/welcomedashboard/welcomedashboard.component';
 import { HeaderComponent } from './Component/header/header.component';
+import { GetalleventsComponent } from './Component/getallevents/getallevents.component';
 
 export const routes: Routes = [
     {path:"login",component:LoginComponent},
@@ -18,4 +19,5 @@ export const routes: Routes = [
     { path: '',component:WelcomedashboardComponent},
     {path:'welcomedashboard',component:WelcomedashboardComponent},
     { path: 'cancel-booking/:id', component: CancelBookingComponent },
+    {path:'getallevents',component:GetalleventsComponent}
 ];

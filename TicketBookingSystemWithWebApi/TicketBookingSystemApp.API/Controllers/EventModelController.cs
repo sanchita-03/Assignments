@@ -14,10 +14,10 @@ namespace TicketBookingSystemApp.API.Controllers
     //[Authorize(Roles = "User")]
     [Route("api/[controller]")]
     [ApiController]
-    public class EventController : ControllerBase
+    public class EventModelController : ControllerBase
     {
         readonly IMediator _mediator;
-        public EventController(IMediator mediator)
+        public EventModelController(IMediator mediator)
         {
             _mediator = mediator;
         }
@@ -28,7 +28,7 @@ namespace TicketBookingSystemApp.API.Controllers
             return Ok(allEvents);
         }
         [HttpPost]
-        public async Task<IActionResult> AddEvent(Event tktEvent)
+        public async Task<IActionResult> AddEvent(EventEntity tktEvent)
         {
             var allEvents = await _mediator.Send(new AddEventCommand(tktEvent));
             return Ok(allEvents);
@@ -47,7 +47,7 @@ namespace TicketBookingSystemApp.API.Controllers
         }
 
         [HttpPut]
-        public async Task<IActionResult> UpdateEvent([FromBody]Event ticevent)
+        public async Task<IActionResult> UpdateEvent([FromBody]EventEntity ticevent)
         {
             var updateResult = await _mediator.Send(new UpdateEventCommand(ticevent));
             return Ok(updateResult);

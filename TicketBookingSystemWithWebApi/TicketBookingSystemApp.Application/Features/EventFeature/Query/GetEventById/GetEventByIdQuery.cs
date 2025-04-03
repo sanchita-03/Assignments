@@ -8,6 +8,6 @@ using TicketBookingSystemApp.Domain;
 
 namespace TicketBookingSystemApp.Application.Features.EventFeature.Query.GetEventById
 {
-    public record GetEventByIdQuery(int eventId) : IRequest<Event>;
+    public record GetEventByIdQuery(int eventId) : IRequest<EventEntity>;
     
 }

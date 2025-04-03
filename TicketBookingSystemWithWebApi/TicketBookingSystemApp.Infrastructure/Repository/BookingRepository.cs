@@ -17,32 +17,24 @@ namespace TicketBookingSystemApp.Infrastructure.Repository
         }
         public async Task<int> AddBookingAsync(Booking booking)
         {
+            var userId = await _ticketBookingDbContext.Users.FindAsync(booking.UserId);
+            if (userId == null)
+            {
+                throw new NotFoundException($"User Id {booking.UserId} not found.");
+            }
             //var seatNumberList = seats.Split(',')
             //                        .Select(s => int.Parse(s.Trim()))
             //                        .ToList();
             var eventDetails = await _ticketBookingDbContext.Events.FindAsync(booking.EventId);
             if (eventDetails == null)
-                throw new NotFoundException("Event not found.");
+                throw new NotFoundException($"Event Id {booking.EventId} not found.");
 
             var availableSeats = await GetAvailableSeatsAsync(booking.EventId);
             var unavailableSeats = booking.SeatNumber.Except(availableSeats).ToList();
 
             if (unavailableSeats.Any())
-                throw new Exception($"Seats {string.Join(", ", unavailableSeats)} are already booked.");
+                throw new NotFoundException($"Seats {string.Join(", ", unavailableSeats)} are already booked.");
 
-            //foreach (var seatNumber in seatNumberList)
-            //{
-            //    var newBooking = new Booking
-            //    {
-            //        UserId = booking.UserId,
-            //        EventId = booking.EventId,
-            //        BookingDate = DateTime.Now,
-            //        Status = Status.Confirmed,
-            //        SeatNumber = seatNumber
-            //    };
-
-            //    await _ticketBookingDbContext.Bookings.AddAsync(newBooking);
-            //}
             await _ticketBookingDbContext.Bookings.AddAsync(booking);
             eventDetails.AvailableSeats -= booking.SeatNumber.Count;
             return await _ticketBookingDbContext.SaveChangesAsync();
@@ -91,11 +83,19 @@ namespace TicketBookingSystemApp.Infrastructure.Repository
         public async Task<int> UpdateBookingAsync(Booking booking)
         {
             var getBooking = await GetBookingByIdAsync(booking.BookingId);
+            var user = await _ticketBookingDbContext.Users.FindAsync(booking.UserId);
+            if (user == null)
+            {
+                throw new NotFoundException($"User Id {booking.UserId} not found.");
+            }
+
             getBooking.UserId = booking.UserId;
+            
             getBooking.EventId = booking.EventId;
             getBooking.SeatNumber = booking.SeatNumber;
             //getBooking.BookingDate = booking.BookingDate;
             getBooking.Status = booking.Status;
+            
             _ticketBookingDbContext.Bookings.Update(getBooking);
             return await _ticketBookingDbContext.SaveChangesAsync() ;
         }
@@ -131,11 +131,11 @@ namespace TicketBookingSystemApp.Infrastructure.Repository
         public async Task<Booking> CancelBookingAsync(int bookingId)
         {
             var getBooking = await GetBookingByIdAsync(bookingId);
-            if(getBooking.Status != Status.Cancelled)
-            {
-                getBooking.Status = Status.Cancelled;
-            }
-            getBooking.SeatNumber = [];
+            //if(getBooking.Status != Status.Cancelled)
+            //{
+            //    getBooking.Status = Status.Cancelled;
+            //}
+            //getBooking.SeatNumber = [];
             var eventDetails = await _ticketBookingDbContext.Events.FindAsync(getBooking.EventId);
             eventDetails.AvailableSeats += getBooking.SeatNumber.Count;
             _ticketBookingDbContext.Bookings.Remove(getBooking);

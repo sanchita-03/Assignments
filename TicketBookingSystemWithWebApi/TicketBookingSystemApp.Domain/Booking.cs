@@ -16,7 +16,7 @@ namespace TicketBookingSystemApp.Domain
         [Required]
         public int EventId { get; set; }
         [JsonIgnore]
-        public Event? Event { get; set; }
+        public EventEntity? Event { get; set; }
         [Required]
         public List<int> SeatNumber { get; set; } = new List<int>();
         [Required]

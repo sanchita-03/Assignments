@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class BookingService {
   private http = inject(HttpClient)
   private apiUrl = "https://localhost:7229/api/Booking";
+  
   // constructor(private http: HttpClient) { 
     
   // }
@@ -37,5 +38,10 @@ export class BookingService {
 
   updateBooking(booking : Booking):Observable<Booking>{
     return this.http.put<Booking>(`${this.apiUrl}`,booking)
+  }
+
+
+  getAvailableSeats(eventId: number): Observable<number[]> {
+    return this.http.get<number[]>(`${this.apiUrl}/available-seats/${eventId}`);
   }
 }

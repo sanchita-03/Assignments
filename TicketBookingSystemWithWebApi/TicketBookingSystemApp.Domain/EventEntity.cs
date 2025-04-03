@@ -4,7 +4,7 @@ using TicketBookingSystemApp.Domain.Constant;
 
 namespace TicketBookingSystemApp.Domain
 {
-    public class Event
+    public class EventEntity
     {
         [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int EventId { get; set; }

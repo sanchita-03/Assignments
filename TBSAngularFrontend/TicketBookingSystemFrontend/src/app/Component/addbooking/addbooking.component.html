@@ -3,13 +3,23 @@
         <h2 class="text-center text-primary mb-4">Add Booking</h2>
         
         <div class="mb-3">
-            <label class="form-label"><strong>User ID</strong></label>
-            <input type="text" [(ngModel)]="newBooking.userId" class="form-control" placeholder="Enter User ID">
+            <label class="form-label"><strong>User Name</strong></label>
+            <input type="text" [(ngModel)]="username" class="form-control" readonly>
         </div>
+        
 
-        <div class="mb-3">
+        <!-- <div class="mb-3">
             <label class="form-label"><strong>Event ID</strong></label>
             <input type="text" [(ngModel)]="newBooking.eventId" class="form-control" placeholder="Enter Event ID">
+        </div> -->
+        <div class="mb-3">
+            <label class="form-label"><strong>Select Event</strong></label>
+            <select class="form-control" [(ngModel)]="newBooking.eventId">
+                <option value="" disabled selected hidden>Select an event</option>
+                <option *ngFor="let event of (eventsList$ | async)" [value]="event.eventId">
+                    {{ event.eventName }}
+                </option>
+            </select>
         </div>
 
         <div class="mb-3">
