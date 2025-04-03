@@ -19,4 +19,9 @@ private apiUrl = "https://localhost:7229/api/Auth";
   register(registerData:Register):Observable<RegistrationResponse>{
     return this.http.post<RegistrationResponse>(`${this.apiUrl}/register`,registerData)
     }
+
+    isLoggedIn():boolean{
+        return !!localStorage.getItem('token');
+      }
+    
 }

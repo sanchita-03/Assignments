@@ -1,61 +1,42 @@
-<nav class="navbar navbar-expand-lg custom-navbar fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow">
   <div class="container">
-      <a class="navbar-brand fw-bold" href="#">🎫 Ticket Booking System</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-      </button>
-      
-      <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/welcomedashboard">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/getallbookings">Bookings</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" routerLink="/updatebooking">Update Booking</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" routerLink="/register">Register</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" routerLink="/login">Login</a>
-              </li>
-          </ul>
-      </div>
-  </div>
-</nav>
+    <!-- Brand Logo -->
+    <a class="navbar-brand fw-bold text-white" routerLink="/">
+      🎫 Ticket Booking System
+    </a>
 
-
-
-<!-- <nav class="navbar navbar-expand-lg custom-navbar">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">🎫 Ticket Booking System</a>
-
-    Mobile Menu Button
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <!-- Navbar Toggle Button for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    Navbar Links
+    <!-- Navbar Items -->
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/addbooking">Add Bookings</a>
+        <li class="nav-item" *ngIf="userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/welcomedashboard" routerLinkActive="active">🏠 Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/updatebooking">Update Booking</a>
+        <li class="nav-item" *ngIf="userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/getallbookings" routerLinkActive="active">📅 Bookings</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/register">Register</a>
+        <li class="nav-item" *ngIf="userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/updatebooking" routerLinkActive="active">✏️ Update</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-light px-3" routerLink="/login">Login</a>
+
+        <!-- User Info & Logout -->
+        <li class="nav-item d-flex align-items-center" *ngIf="userservice.isLoggedIn()">
+          <span class="nav-link text-white fw-bold me-2">👤 Welcome, {{ username }}</span>
+          <button class="btn btn-danger btn-sm" (click)="logout()">Logout</button>
+        </li>
+
+        <!-- Login & Register for Guests -->
+        <li class="nav-item" *ngIf="!userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/register" routerLinkActive="active">📝 Register</a>
+        </li>
+        <li class="nav-item" *ngIf="!userservice.isLoggedIn()">
+          <a class="nav-link text-white" routerLink="/login" routerLinkActive="active">🔑 Login</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-this is my navbar html -->

@@ -7,6 +7,7 @@ import { AddbookingComponent } from './Component/addbooking/addbooking.component
 import { UpdatebookingComponent } from './Component/updatebooking/updatebooking.component';
 import { CancelBookingComponent } from './Component/cancelbooking/cancelbooking.component';
 import { WelcomedashboardComponent } from './Component/welcomedashboard/welcomedashboard.component';
+import { HeaderComponent } from './Component/header/header.component';
 
 export const routes: Routes = [
     {path:"login",component:LoginComponent},
